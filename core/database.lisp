@@ -20,7 +20,8 @@
 ;;;
 
 (defpackage #:chemscribe/core/database
-  (:use #:cl)
+  (:use #:cl
+        #:iterate) ;; for extended iteration capabilities
   (:export #:simple-db))
 (in-package #:chemscribe/core/database)
 

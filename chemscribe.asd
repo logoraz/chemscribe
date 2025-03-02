@@ -17,7 +17,8 @@ in Common Lisp."
   :license "AGPLv3"
   :version (read-file-form "version.text")
   :class :package-inferred-system
-  :depends-on ("chemscribe/core/all")
+  :depends-on ("iterate"
+               "chemscribe/core/all")
   :in-order-to ((test-op (test-op "chemscribe/tests"))))
 
 (defsystem "chemscribe/tests"
