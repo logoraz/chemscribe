@@ -1,5 +1,5 @@
 ;;;;; All tests
-(defpackage :chemscribe/tests/all
-  (:nicknames :chemscribe/tests)
-  (:use :chemscribe/tests/base)
+(defpackage #:chemscribe/tests/all
+  (:use #:chemscribe/tests/base)
+  (:nicknames #:chemscribe/tests)
   (:export #:test-suite))

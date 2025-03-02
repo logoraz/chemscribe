@@ -19,10 +19,10 @@
 ;;; Commentary:
 ;;;
 
-(defpackage :chemscribe/core/database
-  (:use :cl)
+(defpackage #:chemscribe/core/database
+  (:use #:cl)
   (:export #:simple-db))
-(in-package :chemscribe/core/database)
+(in-package #:chemscribe/core/database)
 
 
 (defun simple-db (&optional (n 11))

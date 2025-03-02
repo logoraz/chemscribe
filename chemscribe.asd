@@ -9,7 +9,7 @@
 
 #-asdf3.1 (error "Chemscribe requires ASDF 3.1.2 or later.")
 
-(defsystem "chemscribe"
+(defsystem #:chemscribe
   :description "Chemical Formula Builder & Molecular Editor."
   :long-description "A highly extensible Chemical Formula Builder & Molecular Editor written
 in Common Lisp."
@@ -24,7 +24,7 @@ in Common Lisp."
   :class :package-inferred-system
   :depends-on ("rove"
                "chemscribe/tests/all")
-  :perform (test-op (o c) (symbol-call :chemscribe/tests/all :run-all-tests)))
+  :perform (test-op (o c) (symbol-call #:chemscribe/tests/all #:run-all-tests)))
 
-(register-system-packages "chemscribe/core/all" '(:chemscribe/core))
-(register-system-packages "chemscribe/tests/all" '(:chemscribe/tests))
+(register-system-packages "chemscribe/core/all" '(#:chemscribe/core))
+(register-system-packages "chemscribe/tests/all" '(#:chemscribe/tests))

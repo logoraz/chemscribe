@@ -19,13 +19,13 @@
 ;;; Commentary:
 ;;;
 
-(defpackage :chemscribe/core/chemscribe
-  (:use :cl
-        :chemscribe/core/database)
-  (:import-from :cl-ppcre
+(defpackage #:chemscribe/core/chemscribe
+  (:use #:cl
+        #:chemscribe/core/database)
+  (:import-from #:cl-ppcre
                 #:scan-to-strings)
   (:export #:scratch))
-(in-package :chemscribe/core/chemscribe)
+(in-package #:chemscribe/core/chemscribe)
 
 (defun scratch ()
   "Hello from chemscribe/core!!!"
