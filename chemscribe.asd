@@ -27,5 +27,10 @@ in Common Lisp."
                "chemscribe/tests/all")
   :perform (test-op (o c) (symbol-call #:chemscribe/tests/all #:run-all-tests)))
 
+
 (register-system-packages "chemscribe/core/all" '(#:chemscribe/core))
 (register-system-packages "chemscribe/tests/all" '(#:chemscribe/tests))
+
+(register-system-packages
+ "closer-mop"
+ '(:c2mop :closer-common-lisp :c2cl :closer-common-lisp-user :c2cl-user))
