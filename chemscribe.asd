@@ -21,6 +21,7 @@ in Common Lisp."
                "chemscribe/core/all")
   :in-order-to ((test-op (test-op "chemscribe/tests"))))
 
+
 (defsystem "chemscribe/tests"
   :class :package-inferred-system
   :depends-on ("rove"
@@ -28,8 +29,8 @@ in Common Lisp."
   :perform (test-op (o c) (symbol-call #:chemscribe/tests/all #:run-all-tests)))
 
 
-(register-system-packages "chemscribe/core/all" '(#:chemscribe/core))
-(register-system-packages "chemscribe/tests/all" '(#:chemscribe/tests))
+(register-system-packages "chemscribe/core/all" '(#:chemscribe))
+(register-system-packages "chemscribe/tests/all" '(#:tests))
 
 (register-system-packages
  "closer-mop"
