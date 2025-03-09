@@ -10,15 +10,16 @@
 #-asdf3.1 (error "Chemscribe requires ASDF 3.1.2 or later.")
 
 (defsystem #:chemscribe
-  :description "Chemical Formula Builder & Molecular Editor."
-  :long-description "A highly extensible Chemical Formula Builder & Molecular Editor written
-in Common Lisp."
+  :description "Extensible Chemical Formula Builder & Molecular Editor."
   :author "Erik Almaraz <erikalmaraz@fastmail.com>"
   :license "AGPLv3"
-  :version (read-file-form "version.text")
+  :version "0.0.1"
   :class :package-inferred-system
   :depends-on ("iterate"
-               "chemscribe/core/all")
+               "transducers"
+               ;; "cl-treesitter"
+               "chemscribe/core/all"
+               "chemscribe/library/learncl/all")
   :in-order-to ((test-op (test-op "chemscribe/tests"))))
 
 
@@ -30,6 +31,7 @@ in Common Lisp."
 
 
 (register-system-packages "chemscribe/core/all" '(#:chemscribe))
+(register-system-packages "chemscribe/library/learncl/all" '(#:learncl))
 (register-system-packages "chemscribe/tests/all" '(#:tests))
 
 (register-system-packages
