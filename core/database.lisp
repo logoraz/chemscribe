@@ -19,11 +19,11 @@
 ;;; Commentary:
 ;;;
 
-(defpackage #:chemscribe/core/database
-  (:use #:cl
-        #:iterate) ;; for extended iteration capabilities
+(defpackage :chemscribe/core/database
+  (:use :cl
+        :iterate) ;; for extended iteration capabilities
   (:export #:simple-db))
-(in-package #:chemscribe/core/database)
+(in-package :chemscribe/core/database)
 
 
 (defun simple-db (&optional (n 11))

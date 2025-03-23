@@ -9,7 +9,7 @@
 
 #-asdf3.1 (error "Chemscribe requires ASDF 3.1.2 or later.")
 
-(defsystem #:chemscribe
+(defsystem :chemscribe
   :description "Extensible Chemical Formula Builder & Molecular Editor."
   :author "Erik Almaraz <erikalmaraz@fastmail.com>"
   :license "AGPLv3"
@@ -27,12 +27,13 @@
   :class :package-inferred-system
   :depends-on ("rove"
                "chemscribe/tests/all")
-  :perform (test-op (o c) (symbol-call #:chemscribe/tests/all #:run-all-tests)))
+  :perform (test-op (o c) (symbol-call :chemscribe/tests/all 
+                                       :run-all-tests)))
 
 
-(register-system-packages "chemscribe/core/all" '(#:chemscribe))
-(register-system-packages "chemscribe/library/learncl/all" '(#:learncl))
-(register-system-packages "chemscribe/tests/all" '(#:tests))
+(register-system-packages "chemscribe/core/all" '(:chemscribe))
+(register-system-packages "chemscribe/library/learncl/all" '(:learncl))
+(register-system-packages "chemscribe/tests/all" '(:tests))
 
 (register-system-packages
  "closer-mop"
