@@ -1,32 +1,30 @@
-# ChemScribe (סוֹפֵר)
+# [C]hem[Sc]ribe
 
-A Highly Extensible Chemical Formula Builder and Molecular Editor with Regulatory Intelligence
-written in Common Lisp.
+A Highly Extensible Chemical Formula Builder and Molecular Editor with Regulatory 
+Intelligence written in Common Lisp, specifically for the
+[clasp](https://github.com/clasp-developers/clasp) implementation.
 
-This project is still in the ideation stage - I'm still in the process of determining the inner
-workings, let alone the UI system to implement it with (though considering CLOG).  I am still
-learning Common Lisp and Guile and figured this would be a great way to dive in!
+This project is still in the ideation stage - I'm still in the process of 
+determining the inner workings, let alone the UI system.  I am currently learning 
+Common Lisp and figured this would be a great way to dive in!
 
 
 ## Goals
 
-My first goal is to develop a simple database (integrated with JSON) that can store/access
-molecular, raw material, formula, and regulatory data types.  Second is to develop the formula
-builder and Molecular editor UI's, perhaps using CLOG. Thirdly is to develop the regulatory
-intelligence backend...
+My first goal is to develop a simple database (integrated with JSON) that can 
+store/access molecular, raw material, formula, and regulatory data types.  
+Second is to develop the formula builder and Molecular editor backends.  Thirdly, 
+is to develop the regulatory intelligence backend and begin work on the UI system,
+particularly interesting in using CLOG or perhaps utilize clasp to develop
+something that works with webassembly. 
 
 
 ## Hacking
 
-   Guix is the preferred development environment for now... To begin hacking, simply run
-   the following:
-
-```sh
-
-  $ guix shell -m path/to/chemscribe/manifest.scm -- sbcl
-
-
-```
+I am currently using Fedora Linux (Workstation Edition) to build/hack on this 
+program using the [clasp](https://github.com/clasp-developers/clasp) Common Lisp
+implementation. I recommend using [ocicl](https://github.com/ocicl/ocicl) 
+for dependency management.
 
 
 ## Change Log

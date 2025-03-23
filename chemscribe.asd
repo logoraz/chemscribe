@@ -17,6 +17,8 @@
   :class :package-inferred-system
   :depends-on ("iterate"
                "transducers"
+               "str"
+               "com.inuoe.jzon"
                ;; "cl-treesitter"
                "chemscribe/core/all"
                "chemscribe/library/learncl/all")
