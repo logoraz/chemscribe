@@ -1,4 +1,6 @@
 cl-change-case, ghcr.io/ocicl/cl-change-case@sha256:63b6a033f762d6dc5d365ce49f2a2c691677f2ec1375ebe4226d13b19a29dc7c, cl-change-case-0.2.1/cl-change-case.asd
+cl-ppcre, ghcr.io/ocicl/cl-ppcre@sha256:584907e0683621973579f397115945ef73e9d5b7afa77fae7cacecb3ad272f89, cl-ppcre-20240503-80fb19d/cl-ppcre.asd
+cl-ppcre-unicode, ghcr.io/ocicl/cl-ppcre@sha256:584907e0683621973579f397115945ef73e9d5b7afa77fae7cacecb3ad272f89, cl-ppcre-20240503-80fb19d/cl-ppcre-unicode.asd
 cl-unicode, ghcr.io/ocicl/cl-unicode@sha256:d98f12c1271fb3c1812a27d64dfbe95b0bc5bcfd545b71b8101874e61270b120, cl-unicode-20240503-07e7ff5/cl-unicode.asd
 closer-mop, ghcr.io/ocicl/closer-mop@sha256:e6e042a204fa82441a2d9cfac93466e0b2c3f9c529ddc6ecabf059616e702fdd, closer-mop-20250303-53221de/closer-mop.asd
 com.inuoe.jzon, ghcr.io/ocicl/com.inuoe.jzon@sha256:19a0669df2242fdf84c7d42aa46c57156f5f61219ea71dfb41814571e5c790f7, jzon-20250127-9ef348a/src/com.inuoe.jzon.asd
@@ -12,6 +14,7 @@ iterate, ghcr.io/ocicl/iterate@sha256:f4d54a883bb9ca79037c3ea52581c375117a700fc5
 multilang-documentation-utils, ghcr.io/ocicl/documentation-utils@sha256:b2a1b3f3bcd1a738af85ae2b0168d408c177661eab6d6bbebb254e394d983f54, documentation-utils-20230511-98630dd/multilang-documentation-utils.asd
 str, ghcr.io/ocicl/str@sha256:96063e730a9ca9fb3ee732b44ebd6308ccc5f5f54714dbedb26bf58c0dd6ec33, cl-str-20241213-c7e057b/str.asd
 str.test, ghcr.io/ocicl/str@sha256:96063e730a9ca9fb3ee732b44ebd6308ccc5f5f54714dbedb26bf58c0dd6ec33, cl-str-20241213-c7e057b/str.test.asd
+transducers, ghcr.io/ocicl/transducers@sha256:8b0cc02fb8c7caa0d3bb91256defd40abd3875fcce0801745713fd2939db7b9b, cl-transducers-20250321-4e1305b/transducers.asd
 trivial-features, ghcr.io/ocicl/trivial-features@sha256:e278e24d39060fc7d3715531b16ddd9ab7f93f22ade53e436c0b86dbae3aa065, trivial-features-1.0/trivial-features.asd
 trivial-features-tests, ghcr.io/ocicl/trivial-features@sha256:e278e24d39060fc7d3715531b16ddd9ab7f93f22ade53e436c0b86dbae3aa065, trivial-features-1.0/trivial-features-tests.asd
 trivial-gray-streams, ghcr.io/ocicl/trivial-gray-streams@sha256:d0cc9fb73876100ee60647524f98b5b22566fa1c3a985d79548b0d2b228f8b51, trivial-gray-streams-20240503-a7ead68/trivial-gray-streams.asd

@@ -1,4 +1,4 @@
-# [C]hem[Sc]ribe
+# [C]hem[S]cribe
 
 A Highly Extensible Chemical Formula Builder and Molecular Editor with Regulatory 
 Intelligence written in Common Lisp, specifically for the

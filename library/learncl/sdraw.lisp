@@ -20,14 +20,14 @@
 ;;;   *sdraw-leading-arrow*   Initially nil.  Set to t to get leading arrows.
 ;;;
 
-(defpackage :chemscribe/library/learncl/sdraw
-  (:use :cl)
+(defpackage #:chemscribe/library/learncl/sdraw
+  (:use #:cl)
   (:export #:sdraw
            #:sdraw-loop
            #:scrawl
            #:*sdraw-print-circle*
            #:*sdraw-leading-arrow*))
-(in-package :chemscribe/library/learncl/sdraw)
+(in-package #:chemscribe/library/learncl/sdraw)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

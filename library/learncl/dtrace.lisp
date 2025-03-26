@@ -14,8 +14,8 @@
 ;;;   DTRACE  - same syntax as TRACE
 ;;;   DUNTRACE - same syntax as UNTRACE
 
-(defpackage :chemscribe/library/learncl/dtrace
-  (:use :cl)
+(defpackage #:chemscribe/library/learncl/dtrace
+  (:use #:cl)
   (:export #:dtrace
            #:duntrace
 	   #:*dtrace-print-length*
@@ -23,7 +23,7 @@
 	   #:*dtrace-print-circle*
            #:*dtrace-print-pretty*
 	   #:*dtrace-print-array*))
-(in-package :chemscribe/library/learncl/dtrace)
+(in-package #:chemscribe/library/learncl/dtrace)
 
 ;; (eval-when (eval load)
 ;;   (shadowing-import '(dtrace duntrace) (find-package :common-lisp-user)))
